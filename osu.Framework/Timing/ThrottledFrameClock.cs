@@ -45,6 +45,7 @@ namespace osu.Framework.Timing
 
         public override void ProcessFrame()
         {
+            MaximumUpdateHz = double.MaxValue;
             Debug.Assert(MaximumUpdateHz >= 0);
 
             base.ProcessFrame();
